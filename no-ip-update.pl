@@ -60,7 +60,7 @@ $credentials =~ s/\s*\#.*\n//m; # remove comments
 $credentials = mytrim($credentials);
 my @args = split(/:/, $credentials);
 if (scalar(@args) != 3) {
-  print STDERR "config file not in user:pass:domain format - count is \n";
+  print STDERR "config file not in user:pass:domain format\n";
   exit 1;
 }
 
