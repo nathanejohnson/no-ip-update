@@ -80,7 +80,6 @@ my $response = $mech->get("https://www.noip.com/login/");
 
 if ($response->is_success) {
   $mech->submit_form(
-                     form_number => 2,
                      fields => {
                                 username => $user,
                                 password => $pass,
